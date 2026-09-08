@@ -33,3 +33,4 @@ jobs:
         run: |
           export PYTHONPATH=$(pwd)
           pytest --maxfail=1 --disable-warnings -q
+
