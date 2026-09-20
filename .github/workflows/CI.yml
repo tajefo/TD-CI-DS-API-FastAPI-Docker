@@ -2,9 +2,11 @@ name: CI – FastAPI
 
 on:
   pull_request:
-    branches: [main]
+    branches: 
+      - main
   push:
-    branches: [main, dev]
+    branches: 
+      - dev
 
 permissions:
   contents: read
