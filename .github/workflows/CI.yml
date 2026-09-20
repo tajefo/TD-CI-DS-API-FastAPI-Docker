@@ -29,7 +29,10 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip install pytest httpx pytest-cov
 
-    - name: Exécuter les tests et mesurer la couverture
-      run: |
-        export PYTHONPATH=$(pwd)
-        pytest --cov=app --cov-report=term-missing --maxfail=1 --disable-warnings
+   - name: Exécuter les tests et mesurer la couverture
+    run: |
+    export PYTHONPATH=$(pwd)
+    pytest --cov=app --cov-report=term-missing --maxfail=1 --disable-warnings
+
+
+        
